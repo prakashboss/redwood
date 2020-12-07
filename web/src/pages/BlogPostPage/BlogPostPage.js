@@ -1,13 +1,12 @@
 import { Link, routes } from '@redwoodjs/router'
+import BlogPostCell from 'src/components/BlogPostCell'
+import BlogLayout from 'src/layouts/BlogLayout'
 
-const BlogPostPage = () => {
+const BlogPostPage = ({id}) => {
   return (
-    <>
-      <h1>BlogPostPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/BlogPostPage/BlogPostPage.js</code>
-      </p>
-    </>
+    <BlogLayout>
+      <BlogPostCell id={id}/>
+    </BlogLayout>
   )
 }
 
